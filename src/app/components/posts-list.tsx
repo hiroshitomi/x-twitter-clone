@@ -1,10 +1,10 @@
 import PostCard from "./post-card"
 
-export default function PostsLists({ posts }) {
+export default function PostsLists({ posts }: { posts: any }) {
     return (
         <>
             {
-                posts?.map(post => {
+                posts?.map(({ post }: { post: any }) => {
                     const {
                         id,
                         user,
